@@ -22,4 +22,4 @@ app.use(bodyParser.urlencoded({ extended: false }));
 app.use('/', routes);
 
 mongoose.connect('mongodb://localhost:27017/golf_club_inventory', { useMongoClient: true })
-.then(() => app.listen(3000, () => console.log('ready to roll!!')));
+.then(() => app.listen(3000, () => console.log('LETS FREAKIN GO!!!')));
