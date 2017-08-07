@@ -1,0 +1,32 @@
+<h1>Add a Club</h1>
+
+<form action="/saveClub" method="post">
+  <label for="clubBrand">Brand</label>
+  <input type="text" id="club_brand" name="club_brand" value="{{club.clubBrand}}" />
+  <div class="fieldError">{{errors.clubBrand.message}}</div>
+  <br />
+
+  <label for="clubType">Type</label>
+  <input type="text" id="club_type" name="club_type" value="{{club.clubType}}" />
+  <div class="fieldError">{{errors.clubType.message}}</div>
+  <br />
+
+  <label for="clubCustom">Customized</label>
+  <input type="text" id="club_custom" name="club_custom" value="{{club.clubCustom}}" />
+  <br />
+
+  <label for="clubPrice">Price</label>
+  <input type="text" id="club_price" name="club_price" value="{{club.clubPrice}}" />
+  <br />
+
+  <label for="clubMaterials">Materials</label>
+  <input type="text" id="club_materials" name="club_materials" value="{{club.clubMaterials}}" />
+  <div class="fieldError">{{errors.clubMaterials.message}}</div>
+  <br />
+
+  {{#if club._id}}
+    <input type="hidden" name="id" value="{{club._id}}" />
+  {{/if}}
+
+  <button class="button-primary">Save Club</button>
+</form>

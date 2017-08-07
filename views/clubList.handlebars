@@ -1,0 +1,36 @@
+
+<h1>List Clubs</h1>
+
+
+<table border="1">
+  <tr>
+    <th>
+      Brand
+    </th>
+    <th>
+      Type
+    </th>
+    <th>
+      Custom
+    </th>
+    <th>
+      Price
+    </th>
+    <th>
+      Materials
+    </th>
+    <th></th>
+  </tr>
+
+  {{#clubs}}
+  <tr>
+    <td><a href="/addItem?id={{_id}}">{{clubBrand}}</a></td>
+    <td>{{clubType}}</td>
+    <td>{{clubCustom}}</td>
+    <td>{{clubPrice}}</td>
+    <td>{{clubMaterials}}</td>
+    <td><a href="/deleteClub/?id={{_id}}">Delete</a></td>
+  </tr>
+  {{/clubs}}
+
+</table>
