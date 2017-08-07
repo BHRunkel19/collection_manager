@@ -8,7 +8,7 @@
       Brand
     </th>
     <th>
-      Type
+      Category
     </th>
     <th>
       Custom
@@ -24,11 +24,11 @@
 
   {{#clubs}}
   <tr>
-    <td><a href="/addItem?id={{_id}}">{{clubBrand}}</a></td>
-    <td>{{clubType}}</td>
-    <td>{{clubCustom}}</td>
-    <td>{{clubPrice}}</td>
-    <td>{{clubMaterials}}</td>
+    <td><a href="/addItem?id={{_id}}">{{brand}}</a></td>
+    <td>{{category}}</td>
+    <td>{{custom}}</td>
+    <td>{{price}}</td>
+    <td>{{materials}}</td>
     <td><a href="/deleteClub/?id={{_id}}">Delete</a></td>
   </tr>
   {{/clubs}}

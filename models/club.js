@@ -3,11 +3,11 @@ const mongoose = require('mongoose');
 const Schema = mongoose.Schema;
 
 const clubSchema = new Schema({
-  clubBrand: { type: String, required: true },
-  clubType: { type: String, required: true },
-  clubCustom: { type: Boolean },
-  clubPrice: { type: Number, required: true },
-  clubMaterials: []
+  brand: { type: String, required: true },
+  category: { type: String, required: true },
+  custom: { type: Boolean },
+  price: { type: Number, required: true },
+  materials: []
 });
 
 // create a model for a club
