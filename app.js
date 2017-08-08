@@ -14,6 +14,9 @@ app.engine('handlebars', exphbrs({ defaultLayout: 'main'}));
 app.set('views', './views');
 app.set('view engine', 'handlebars');
 
+//tell application how to render static content
+app.use(express.static('public'));
+
 //tell express to use body-parser middleware to parse form data
 app.use(bodyParser.json());
 app.use(bodyParser.urlencoded({ extended: false }));
