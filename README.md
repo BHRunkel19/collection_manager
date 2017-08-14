@@ -1,1 +1,1 @@
-mongoexport --db databaseName --collection collectionName --out nameThisFile.json
+mongoexport --db robots --collection directory --out directoryData.json
