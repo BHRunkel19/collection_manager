@@ -1,3 +1,4 @@
-h1{
-  color: blue; 
+a:visited{
+  color: blue;
+  text-decoration: underline;
 }

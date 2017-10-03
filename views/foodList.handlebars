@@ -1,5 +1,5 @@
 
-<h1>List Clubs</h1>
+<h1>List Items</h1>
 
 
 <table border="1">
@@ -11,26 +11,26 @@
       Category
     </th>
     <th>
-      Custom
+      Quantity
     </th>
     <th>
       Price
     </th>
     <th>
-      Materials
+      Available
     </th>
     <th></th>
   </tr>
 
-  {{#clubs}}
+  {{#foods}}
   <tr>
     <td><a href="/addItem?id={{_id}}">{{brand}}</a></td>
     <td>{{category}}</td>
-    <td>{{custom}}</td>
+    <td>{{quantity}}</td>
     <td>{{price}}</td>
-    <td>{{materials}}</td>
-    <td><a href="/deleteClub/?id={{_id}}">Delete</a></td>
+    <td>{{available}}</td>
+    <td><a href="/deleteFood/?id={{_id}}">Delete</a></td>
   </tr>
-  {{/clubs}}
+  {{/foods}}
 
 </table>

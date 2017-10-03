@@ -1,35 +1,35 @@
 
-<h1>Add a Club</h1>
+<h1>Add an Item</h1>
 
-<form action="/saveClub" method="post">
+<form action="/saveFood" method="post">
   <label for="brand">Brand</label>
-  <input type="text" id="brand" name="brand" value="{{club.brand}}" />
+  <input type="text" id="brand" name="brand" value="{{food.brand}}" />
   <div class="fieldError">{{errors.brand.message}}</div>
   <br />
 
   <label for="category">Category</label>
-  <input type="text" id="category" name="category" value="{{club.category}}" />
+  <input type="text" id="category" name="category" value="{{food.category}}" />
   <div class="fieldError">{{errors.category.message}}</div>
   <br />
 
-  <label for="custom">Customized</label>
-  <input type="text" id="custom" name="custom" value="{{club.custom}}" />
-  <div class="fieldError">{{errors.custom.message}}</div>
+  <label for="quantity">Quantity</label>
+  <input type="text" id="quantity" name="quantity" value="{{food.quantity}}" />
+  <div class="fieldError">{{errors.quantity.message}}</div>
   <br />
 
   <label for="price">Price</label>
-  <input type="text" id="price" name="price" value="{{club.price}}" />
+  <input type="text" id="price" name="price" value="{{food.price}}" />
   <div class="fieldError">{{errors.price.message}}</div>
   <br />
 
-  <label for="materials">Materials</label>
-  <input type="text" id="materials" name="materials" value="{{club.materials}}" />
-  <div class="fieldError">{{errors.materials.message}}</div>
+  <label for="available">Available</label>
+  <input type="text" id="available" name="available" value="{{food.available}}" />
+  <div class="fieldError">{{errors.available.message}}</div>
   <br />
 
-  {{#if club._id}}
-    <input type="hidden" name="id" value="{{club._id}}" />
+  {{#if food._id}}
+    <input type="hidden" name="id" value="{{food._id}}" />
   {{/if}}
 
-  <button class="button-primary">Save Club</button>
+  <button class="button-primary">Save Food</button>
 </form>
